@@ -9,6 +9,7 @@ import {
 import ClockDisplay from '../components/Schedule/ClockDisplay';
 import AlarmForm from '../components/Schedule/AlarmForm';
 import AlarmList from '../components/Schedule/AlarmList';
+import MotorControl from '../components/MotorControl';
 import { LOCAL_HOST } from '@env';
 
 export default function Schedule() {
@@ -128,6 +129,7 @@ export default function Schedule() {
 
   return (
     <ScrollView contentContainerStyle={styles.container}>
+      <MotorControl />
       <ClockDisplay currentTime={currentTime} />
       
       <AlarmForm 
